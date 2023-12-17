@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand img {
+  height: fit-content;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.sdn {
+  text-align: center;
+}
+
+.sdn h4 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.sch {
+  padding: 5px 10px;
+  display: flex;
+  gap: 80px;
+}
+
+.sch a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.sch a:hover {
+  background-color: aqua;
+}
+
+/* styles.css or within your component */
+.center-box {
+  display: flex;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-main-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  width: 1200px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid rgb(7, 7, 7);
+}
+
+.box {
+  width: calc(50% - 10px);
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 1px solid rgb(7, 7, 7);
+
+}
+
+.long-box {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .sch {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
